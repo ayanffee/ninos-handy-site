@@ -41,7 +41,7 @@ export default function Home() {
             style={{
               fontFamily: "'Press Start 2P', cursive",
               fontSize: 'clamp(10px, 1.6vw, 20px)',
-              lineHeight: '1',
+              lineHeight: '2.2',
               color: 'rgba(255,255,255,0.55)',
               textTransform: 'uppercase',
               transform: 'perspective(500px) rotateX(50deg)',
