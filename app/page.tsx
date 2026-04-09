@@ -65,13 +65,9 @@ export default function Home() {
 
       {/* SECTION 2: MEET LANA — Underground earth layers */}
       <section className="relative overflow-hidden">
-        {/* Earth layers background image */}
-        <div className="relative py-20 px-8" style={{
-          backgroundImage: 'url(/earth-layers-v2.png)',
-          backgroundSize: '100% 100%',
-          backgroundRepeat: 'no-repeat',
-          imageRendering: 'pixelated',
-        }}>
+        {/* Earth layers background — scrolling left to right */}
+        <div className="absolute inset-0 z-0 scrolling-earth" />
+        <div className="relative py-20 px-8">
 
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
             {/* Photo — pixel-art framed */}

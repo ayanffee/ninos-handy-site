@@ -44,3 +44,17 @@
 .pixelated {
   image-rendering: pixelated;
 }
+
+/* ── Scrolling earth layers background ── */
+@keyframes earth-scroll {
+  from { background-position: 0 0; }
+  to   { background-position: -1361px 0; }
+}
+
+.scrolling-earth {
+  background-image: url('/earth-layers-v2.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  image-rendering: pixelated;
+  animation: earth-scroll 24s linear infinite;
+}
