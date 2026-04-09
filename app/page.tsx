@@ -20,14 +20,15 @@ export default function Home() {
           <p
             style={{
               fontFamily: "'Press Start 2P', cursive",
-              fontSize: 'clamp(8px, 1.2vw, 14px)',
+              fontSize: 'clamp(10px, 1.6vw, 20px)',
               lineHeight: '2.2',
-              color: 'rgba(255,255,255,0.20)',
+              color: 'rgba(255,255,255,0.55)',
               textTransform: 'uppercase',
               transform: 'perspective(500px) rotateX(50deg)',
               transformOrigin: 'bottom left',
-              textShadow: '2px 2px 0px rgba(0,80,0,0.4), 0 4px 12px rgba(0,0,0,0.3)',
+              textShadow: '3px 3px 0px rgba(0,50,0,0.6), 0 0 20px rgba(255,255,255,0.15)',
               letterSpacing: '0.05em',
+              WebkitTextStroke: '0.5px rgba(255,255,255,0.3)',
             }}
           >
             Fast &amp; Reliable<br />Landscaping &amp;<br />Handy Services
@@ -39,15 +40,16 @@ export default function Home() {
           <h1
             style={{
               fontFamily: "'Press Start 2P', cursive",
-              fontSize: 'clamp(8px, 1.2vw, 14px)',
+              fontSize: 'clamp(10px, 1.6vw, 20px)',
               lineHeight: '1',
-              color: 'rgba(255,255,255,0.20)',
+              color: 'rgba(255,255,255,0.55)',
               textTransform: 'uppercase',
               whiteSpace: 'nowrap',
               transform: 'perspective(500px) rotateX(50deg)',
               transformOrigin: 'bottom right',
-              textShadow: '2px 2px 0px rgba(0,80,0,0.4), 0 4px 12px rgba(0,0,0,0.3)',
+              textShadow: '3px 3px 0px rgba(0,50,0,0.6), 0 0 20px rgba(255,255,255,0.15)',
               letterSpacing: '0.05em',
+              WebkitTextStroke: '0.5px rgba(255,255,255,0.3)',
             }}
           >
             ninothandyservices
