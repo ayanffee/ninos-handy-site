@@ -15,13 +15,18 @@ export default function Home() {
         {/* SCROLLING BACKGROUND — one div, CSS handles tiling + animation */}
         <div className="absolute inset-0 z-0 scrolling-bg" />
 
-        {/* LOGO */}
-        <div className="absolute top-6 left-6 z-30">
-          <div className="bg-black/90 p-4 border-2 border-yellow-400 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-            <h1 className="text-xl md:text-3xl font-black text-white italic leading-none">
-              NINO&apos;S <span className="text-yellow-400">HANDY</span>
-            </h1>
-          </div>
+        {/* LOGO — laid flat on the grass like painted markings */}
+        <div className="absolute bottom-[22%] left-1/2 -translate-x-1/2 z-10 pointer-events-none">
+          <h1
+            className="text-4xl md:text-7xl font-black uppercase italic tracking-[0.15em] leading-none whitespace-nowrap text-white/30"
+            style={{
+              transform: 'scaleY(0.45)',
+              transformOrigin: 'bottom center',
+              textShadow: '0 2px 8px rgba(0,0,0,0.3)',
+            }}
+          >
+            ninothandyservices
+          </h1>
         </div>
 
         {/* WALKER — sits on the grass, scales nicely on mobile vs desktop */}
@@ -55,7 +60,7 @@ export default function Home() {
       </section>
 
       <footer className="bg-black py-10 text-center text-yellow-400 font-bold uppercase tracking-widest border-t-8 border-black">
-        Nino&apos;s Handy Services © 2026 — Built with Grit
+        ninothandyservices © 2026 — Built with Grit
       </footer>
     </main>
   );
