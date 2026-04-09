@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/mac/ninos-handy-site/public/nino-sprite.png)",
+      "Bash(ls /Users/mac/ninos-handy-site/public/image_20*)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/mac/ninos-handy-site/public/image_20.png)",
+      "Bash(python3 -c ':*)",
+      "Bash(sips -g pixelWidth -g pixelHeight public/nino-sprite.png)",
+      "Bash(git init:*)",
+      "Bash(gh repo:*)"
+    ]
+  }
+}

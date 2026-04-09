@@ -67,7 +67,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         {/* Earth layers background image */}
         <div className="relative py-20 px-8" style={{
-          backgroundImage: 'url(/earth-layers.png)',
+          backgroundImage: 'url(/earth-layers-v2.png)',
           backgroundSize: '100% 100%',
           backgroundRepeat: 'no-repeat',
           imageRendering: 'pixelated',
