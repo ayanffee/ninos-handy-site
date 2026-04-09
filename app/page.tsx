@@ -81,7 +81,7 @@ export default function Home() {
                   boxShadow: '8px 8px 0px #1a0f05, -2px -2px 0px #8a7a6a',
                   imageRendering: 'pixelated',
                 }}>
-                <img src="/lana.jpeg" alt="Lana" className="w-full h-full object-cover" style={{ imageRendering: 'auto' }} />
+                <img src="/lana.jpeg" alt="Nino" className="w-full h-full object-cover" style={{ imageRendering: 'auto' }} />
               </div>
             </div>
 
@@ -96,7 +96,7 @@ export default function Home() {
                   textShadow: '3px 3px 0px rgba(0,0,0,0.6)',
                 }}
               >
-                HI, I&apos;M <span style={{ color: '#5dba5d' }}>LANA</span>
+                HI, I&apos;M <span style={{ color: '#5dba5d' }}>NINO</span>
               </h2>
               <p
                 className="mb-8 leading-relaxed"
