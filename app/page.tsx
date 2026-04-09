@@ -44,15 +44,15 @@ export default function Home() {
               lineHeight: '1',
               color: 'rgba(255,255,255,0.55)',
               textTransform: 'uppercase',
-              whiteSpace: 'nowrap',
               transform: 'perspective(500px) rotateX(50deg)',
               transformOrigin: 'bottom right',
               textShadow: '3px 3px 0px rgba(0,50,0,0.6), 0 0 20px rgba(255,255,255,0.15)',
               letterSpacing: '0.05em',
               WebkitTextStroke: '0.5px rgba(255,255,255,0.3)',
+              textAlign: 'right',
             }}
           >
-            ninothandyservices
+            Nino.T<br />Handy<br />Services
           </h1>
         </div>
 
