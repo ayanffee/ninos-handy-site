@@ -15,12 +15,13 @@
 }
 
 /* FILM PROJECTOR: container = 1 frame wide, sheet slides behind it */
+/* Sprite is 512x382, 3 frames → each frame = 170px wide */
 .nino-walker-sprite {
   display: block;
-  width: 67px;
-  height: 200px;
+  width: 170px;
+  height: 382px;
   background-image: url('/nino-sprite.png');
-  background-size: 268px 200px;
+  background-size: 512px 382px;
   background-repeat: no-repeat;
   background-position: 0 0;
   image-rendering: pixelated;
@@ -29,7 +30,7 @@
 
 @keyframes nino-walk {
   from { background-position: 0 0; }
-  to   { background-position: -201px 0; }
+  to   { background-position: -510px 0; }
 }
 
 .pixelated {

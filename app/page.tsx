@@ -30,8 +30,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* WALKER */}
-        <div className="absolute bottom-[28%] left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+        {/* WALKER — pinned to the grass, scaled down so he fits the scene */}
+        <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2 z-20 pointer-events-none origin-bottom scale-[0.45] md:scale-[0.55]">
           <div className="nino-walker-sprite"></div>
         </div>
 
