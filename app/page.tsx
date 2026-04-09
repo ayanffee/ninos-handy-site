@@ -15,13 +15,28 @@ export default function Home() {
         {/* SCROLLING BACKGROUND — one div, CSS handles tiling + animation */}
         <div className="absolute inset-0 z-0 scrolling-bg" />
 
-        {/* LOGO — laid flat on the grass like painted markings */}
-        <div className="absolute bottom-[22%] left-1/2 -translate-x-1/2 z-10 pointer-events-none">
-          <h1
-            className="text-4xl md:text-7xl font-black uppercase italic tracking-[0.15em] leading-none whitespace-nowrap text-white/30"
+        {/* SLOGAN — left side, flat on the grass */}
+        <div className="absolute bottom-[24%] left-[5%] z-10 pointer-events-none">
+          <p
+            className="text-lg md:text-3xl font-black uppercase italic tracking-[0.12em] leading-tight text-white/25"
             style={{
-              transform: 'scaleY(0.45)',
-              transformOrigin: 'bottom center',
+              transform: 'perspective(400px) rotateX(55deg) rotateZ(-2deg)',
+              transformOrigin: 'bottom left',
+              textShadow: '0 2px 6px rgba(0,0,0,0.4)',
+              maxWidth: '320px',
+            }}
+          >
+            fast and reliable<br />landscaping &amp;<br />handy services
+          </p>
+        </div>
+
+        {/* BUSINESS NAME — right side, flat on the grass */}
+        <div className="absolute bottom-[22%] right-[5%] z-10 pointer-events-none">
+          <h1
+            className="text-3xl md:text-6xl font-black uppercase italic tracking-[0.15em] leading-none whitespace-nowrap text-white/30"
+            style={{
+              transform: 'perspective(400px) rotateX(55deg) rotateZ(2deg)',
+              transformOrigin: 'bottom right',
               textShadow: '0 2px 8px rgba(0,0,0,0.3)',
             }}
           >
