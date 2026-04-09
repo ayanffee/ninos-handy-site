@@ -15,38 +15,37 @@ export default function Home() {
         {/* SCROLLING BACKGROUND — one div, CSS handles tiling + animation */}
         <div className="absolute inset-0 z-0 scrolling-bg" />
 
-        {/* SLOGAN — left of figurine, flat on the grass */}
-        <div className="absolute bottom-[28%] right-[54%] z-10 pointer-events-none">
+        {/* SLOGAN — left side of grass */}
+        <div className="absolute bottom-[27%] left-[4%] z-10 pointer-events-none">
           <p
             style={{
               fontFamily: "'Press Start 2P', cursive",
-              fontSize: 'clamp(8px, 1.3vw, 15px)',
+              fontSize: 'clamp(8px, 1.2vw, 14px)',
               lineHeight: '2.2',
               color: 'rgba(255,255,255,0.20)',
               textTransform: 'uppercase',
               transform: 'perspective(500px) rotateX(50deg)',
-              transformOrigin: 'bottom right',
+              transformOrigin: 'bottom left',
               textShadow: '2px 2px 0px rgba(0,80,0,0.4), 0 4px 12px rgba(0,0,0,0.3)',
               letterSpacing: '0.05em',
-              textAlign: 'right',
             }}
           >
             Fast &amp; Reliable<br />Landscaping &amp;<br />Handy Services
           </p>
         </div>
 
-        {/* BUSINESS NAME — right of figurine, flat on the grass */}
-        <div className="absolute bottom-[28%] left-[54%] z-10 pointer-events-none">
+        {/* BUSINESS NAME — right side of grass */}
+        <div className="absolute bottom-[27%] right-[4%] z-10 pointer-events-none">
           <h1
             style={{
               fontFamily: "'Press Start 2P', cursive",
-              fontSize: 'clamp(8px, 1.3vw, 15px)',
+              fontSize: 'clamp(8px, 1.2vw, 14px)',
               lineHeight: '1',
               color: 'rgba(255,255,255,0.20)',
               textTransform: 'uppercase',
               whiteSpace: 'nowrap',
               transform: 'perspective(500px) rotateX(50deg)',
-              transformOrigin: 'bottom left',
+              transformOrigin: 'bottom right',
               textShadow: '2px 2px 0px rgba(0,80,0,0.4), 0 4px 12px rgba(0,0,0,0.3)',
               letterSpacing: '0.05em',
             }}
