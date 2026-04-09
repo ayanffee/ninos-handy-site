@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 25s linear infinite;
+  display: flex;
+  width: 300%;
+  height: 100%;
+}
+
+/* FILM PROJECTOR: container = 1 frame wide, sheet slides behind it */
+.nino-walker-sprite {
+  display: block;
+  width: 67px;
+  height: 200px;
+  background-image: url('/nino-sprite.png');
+  background-size: 268px 200px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  image-rendering: pixelated;
+  animation: nino-walk 0.6s steps(3) infinite;
+}
+
+@keyframes nino-walk {
+  from { background-position: 0 0; }
+  to   { background-position: -201px 0; }
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
