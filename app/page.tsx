@@ -64,23 +64,14 @@ export default function Home() {
       </section>
 
       {/* SECTION 2: MEET LANA — Underground earth layers */}
-      <section className="relative overflow-hidden" style={{ imageRendering: 'pixelated' }}>
-        {/* Earth layer bands — continuation from hero's dirt bottom */}
-        <div className="w-full h-[16px]" style={{ background: '#5a3a1a' }} /> {/* topsoil dark */}
-        <div className="w-full h-[12px]" style={{ background: '#4a2e12' }} /> {/* topsoil darker */}
-        <div className="w-full h-[8px]"  style={{ background: '#3d260f' }} /> {/* transition */}
-
-        {/* Main content area — deep soil */}
-        <div className="relative py-20 px-8" style={{ background: 'linear-gradient(180deg, #3a2410 0%, #2e1c0b 15%, #261608 30%, #1e1206 50%, #1a0f05 70%, #151515 100%)' }}>
-
-          {/* Scattered pixel rocks/pebbles decoration */}
-          <div className="absolute top-[10%] left-[8%] w-3 h-2 rounded-sm opacity-20" style={{ background: '#6b5a4a' }} />
-          <div className="absolute top-[25%] right-[12%] w-4 h-2 rounded-sm opacity-15" style={{ background: '#7a6952' }} />
-          <div className="absolute top-[50%] left-[15%] w-2 h-2 rounded-sm opacity-20" style={{ background: '#5c4d3d' }} />
-          <div className="absolute top-[65%] right-[20%] w-3 h-1 rounded-sm opacity-15" style={{ background: '#6b5a4a' }} />
-          <div className="absolute top-[80%] left-[25%] w-2 h-2 rounded-sm opacity-10" style={{ background: '#8a7a6a' }} />
-          <div className="absolute top-[40%] left-[70%] w-3 h-2 rounded-sm opacity-15" style={{ background: '#5c4d3d' }} />
-          <div className="absolute top-[15%] left-[45%] w-2 h-1 rounded-sm opacity-20" style={{ background: '#7a6952' }} />
+      <section className="relative overflow-hidden">
+        {/* Earth layers background image */}
+        <div className="relative py-20 px-8" style={{
+          backgroundImage: 'url(/earth-layers.png)',
+          backgroundSize: '100% 100%',
+          backgroundRepeat: 'no-repeat',
+          imageRendering: 'pixelated',
+        }}>
 
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
             {/* Photo — pixel-art framed */}
@@ -144,11 +135,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Deeper earth layers below content */}
-        <div className="w-full h-[12px]" style={{ background: '#151515' }} />
-        <div className="w-full h-[10px]" style={{ background: '#1a1a2a' }} /> {/* hint of deep blue rock */}
-        <div className="w-full h-[8px]"  style={{ background: '#12121e' }} />
-        <div className="w-full h-[6px]"  style={{ background: '#0e0e18' }} />
       </section>
 
       <footer className="bg-black py-10 text-center text-yellow-400 font-bold uppercase tracking-widest border-t-8 border-black">
