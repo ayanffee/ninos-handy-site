@@ -15,41 +15,40 @@ export default function Home() {
         {/* SCROLLING BACKGROUND — one div, CSS handles tiling + animation */}
         <div className="absolute inset-0 z-0 scrolling-bg" />
 
-        {/* SLOGAN — left side, painted on the grass */}
-        <div className="absolute bottom-[28%] left-[4%] md:left-[6%] z-10 pointer-events-none">
+        {/* SLOGAN — left of figurine, flat on the grass */}
+        <div className="absolute bottom-[28%] right-[54%] z-10 pointer-events-none">
           <p
             style={{
               fontFamily: "'Press Start 2P', cursive",
-              fontSize: 'clamp(8px, 1.4vw, 16px)',
+              fontSize: 'clamp(8px, 1.3vw, 15px)',
               lineHeight: '2.2',
-              color: 'rgba(255,255,255,0.18)',
+              color: 'rgba(255,255,255,0.20)',
               textTransform: 'uppercase',
               transform: 'perspective(500px) rotateX(50deg)',
-              transformOrigin: 'bottom left',
+              transformOrigin: 'bottom right',
               textShadow: '2px 2px 0px rgba(0,80,0,0.4), 0 4px 12px rgba(0,0,0,0.3)',
-              imageRendering: 'pixelated',
               letterSpacing: '0.05em',
+              textAlign: 'right',
             }}
           >
             Fast &amp; Reliable<br />Landscaping &amp;<br />Handy Services
           </p>
         </div>
 
-        {/* BUSINESS NAME — right side, stamped on the grass */}
-        <div className="absolute bottom-[26%] right-[4%] md:right-[6%] z-10 pointer-events-none">
+        {/* BUSINESS NAME — right of figurine, flat on the grass */}
+        <div className="absolute bottom-[28%] left-[54%] z-10 pointer-events-none">
           <h1
             style={{
               fontFamily: "'Press Start 2P', cursive",
-              fontSize: 'clamp(10px, 2vw, 24px)',
+              fontSize: 'clamp(8px, 1.3vw, 15px)',
               lineHeight: '1',
-              color: 'rgba(255,255,255,0.22)',
+              color: 'rgba(255,255,255,0.20)',
               textTransform: 'uppercase',
               whiteSpace: 'nowrap',
               transform: 'perspective(500px) rotateX(50deg)',
-              transformOrigin: 'bottom right',
-              textShadow: '3px 3px 0px rgba(0,80,0,0.5), 0 6px 16px rgba(0,0,0,0.35)',
-              imageRendering: 'pixelated',
-              letterSpacing: '0.08em',
+              transformOrigin: 'bottom left',
+              textShadow: '2px 2px 0px rgba(0,80,0,0.4), 0 4px 12px rgba(0,0,0,0.3)',
+              letterSpacing: '0.05em',
             }}
           >
             ninothandyservices
