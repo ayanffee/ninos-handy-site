@@ -63,11 +63,9 @@ export default function Home() {
 
       </section>
 
-      {/* SECTION 2: MEET LANA — Underground earth layers */}
-      <section className="relative overflow-hidden">
-        {/* Earth layers background — scrolling left to right */}
-        <div className="absolute inset-0 z-0 scrolling-earth" />
-        <div className="relative py-20 px-8">
+      {/* SECTION 2: MEET NINO — Underground earth layers */}
+      <section className="relative overflow-hidden scrolling-earth">
+        <div className="relative py-20 px-8 z-10">
 
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
             {/* Photo — pixel-art framed */}
