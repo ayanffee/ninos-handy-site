@@ -2,20 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes infinite-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-33.333%); }
+/* ── Scrolling neighbourhood background ── */
+/* Uses CSS background-image so the full picture (roofs, houses, grass, dirt)
+   is always visible. repeat-x tiles it horizontally; the keyframe slides
+   one tile-width to the left so the loop is seamless. */
+@keyframes bg-scroll {
+  from { background-position: 0 bottom; }
+  to   { background-position: -1376px bottom; }   /* = exact image width */
 }
 
-.animate-infinite-scroll {
-  animation: infinite-scroll 25s linear infinite;
-  display: flex;
-  width: 300%;
+.scrolling-bg {
+  width: 100%;
   height: 100%;
+  background-image: url('/image_20.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;          /* full height, natural width */
+  background-position: 0 bottom;
+  image-rendering: pixelated;
+  animation: bg-scroll 18s linear infinite;
 }
 
-/* FILM PROJECTOR: container = 1 frame wide, sheet slides behind it */
-/* Sprite is 512x382, 3 frames → each frame = 170px wide */
+/* ── Walking sprite ── */
+/* Sprite sheet: 512×382, 3 frames → each frame 170 px wide */
 .nino-walker-sprite {
   display: block;
   width: 170px;

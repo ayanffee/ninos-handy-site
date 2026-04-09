@@ -10,28 +10,22 @@ export default function Home() {
       <audio ref={audioRef} src="/hardwork.mp3" />
 
       {/* --- SECTION 1: ANIMATED HERO --- */}
-      <section className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden border-b-8 border-black">
+      <section className="relative h-screen w-full overflow-hidden border-b-8 border-black">
 
-        {/* SCROLLING BACKGROUND */}
-        <div className="absolute inset-0 z-0 flex animate-infinite-scroll">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="relative w-full h-full flex-shrink-0">
-              <img src="/image_20.png" alt="" className="w-full h-full object-cover pixelated" />
-            </div>
-          ))}
-        </div>
+        {/* SCROLLING BACKGROUND — one div, CSS handles tiling + animation */}
+        <div className="absolute inset-0 z-0 scrolling-bg" />
 
         {/* LOGO */}
         <div className="absolute top-6 left-6 z-30">
           <div className="bg-black/90 p-4 border-2 border-yellow-400 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             <h1 className="text-xl md:text-3xl font-black text-white italic leading-none">
-              NINO'S <span className="text-yellow-400">HANDY</span>
+              NINO&apos;S <span className="text-yellow-400">HANDY</span>
             </h1>
           </div>
         </div>
 
-        {/* WALKER — pinned to the grass, scaled down so he fits the scene */}
-        <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2 z-20 pointer-events-none origin-bottom scale-[0.45] md:scale-[0.55]">
+        {/* WALKER — sits on the grass, scales nicely on mobile vs desktop */}
+        <div className="absolute bottom-[18%] left-1/2 -translate-x-1/2 z-20 pointer-events-none origin-bottom scale-[0.35] md:scale-[0.5]">
           <div className="nino-walker-sprite"></div>
         </div>
 
@@ -45,10 +39,10 @@ export default function Home() {
           </div>
           <div className="flex-1 text-left">
             <h2 className="text-6xl font-black text-black uppercase italic mb-6 leading-tight">
-              HI, I'M <span className="text-emerald-700">LANA</span>
+              HI, I&apos;M <span className="text-emerald-700">LANA</span>
             </h2>
             <p className="text-2xl text-slate-800 font-medium mb-10 leading-relaxed">
-              I specialize in extreme landscape overhauls. We don't just mow; we transform your land into a masterpiece.
+              I specialize in extreme landscape overhauls. We don&apos;t just mow; we transform your land into a masterpiece.
             </p>
             <button
               onClick={playMusic}
@@ -61,7 +55,7 @@ export default function Home() {
       </section>
 
       <footer className="bg-black py-10 text-center text-yellow-400 font-bold uppercase tracking-widest border-t-8 border-black">
-        Nino's Handy Services © 2026 — Built with Grit
+        Nino&apos;s Handy Services © 2026 — Built with Grit
       </footer>
     </main>
   );
